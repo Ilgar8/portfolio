@@ -1,0 +1,182 @@
+#portfolio {
+    padding-top: 100px;
+
+    h1 {
+        font-size: 55px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0 0 15px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.35;
+        position: relative;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+    }
+
+    hr {
+        width: 60px;
+        color: red;
+        height: 2px;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 50%;
+        display: flex;
+        margin: 50px auto;
+
+        justify-content: space-evenly;
+
+        button {
+            padding: 5px 20px;
+            border: none;
+            font-size: 13px;
+            height: 40px;
+            color: #333333;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                color: #F25862;
+            }
+        }
+    }
+}
+
+// portfolio finished\\
+// ============================\\
+#lorem {
+    padding-bottom: 100px;
+
+    .lorem-box,
+    .lorem-box1,
+    .lorem-box2,
+    .lorem-box3,
+    .lorem-box4,
+    .lorem-box5,
+    .lorem-box6,
+    .lorem-box7,
+    .lorem-box8 {
+
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 40px;
+        transition: 0, 5s ease-in-out;
+
+        img {
+            transition: 0.5s ease-in-out;
+        }
+
+
+        &:hover {
+            box-shadow: 5px 20px 30px gray;
+
+            img {
+                transform: scale(1.1);
+
+            }
+
+            &::after {
+                content: 'Augue lorem lacinia';
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                color: rgb(53, 53, 53);
+                font-size: 20px;
+                font-weight: 400;
+                font-style: italic;
+                line-height: 20px;
+
+            }
+
+        }
+
+
+    }
+
+    hr {
+        width: 20%;
+        height: 1.5px;
+        margin: auto;
+        color: #F25861;
+    }
+
+    .aba {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+
+        span {
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        i {
+            padding: 10px;
+            margin-top: 2px;
+
+        }
+    }
+
+}
+
+// lorem finished\\
+// ------------------------\\
+@media(max-width:576px) {
+    #portfolio {
+        .buttons {
+            button {
+                font-size: 10px;
+                padding: 5px 15px;
+                border: 1px solid rgb(135, 121, 121);
+            }
+        }
+    }
+
+    #lorem {
+        margin-bottom: 70px;
+    }
+}
+
+@media(min-width:576px) and (max-width:778px) {
+    #portfolio {
+        .buttons {
+            width: 100%;
+
+
+            button {
+                font-size: 15px;
+                padding: 30px 20px;
+                display: flex;
+                align-items: center;
+                border: 1px solid rgb(135, 121, 121);
+
+            }
+        }
+    }
+}
+
+@media(min-width:778px) and (max-width:992px) {
+    #portfolio {
+        .buttons {
+            width: 100%;
+
+            button {
+                font-size: 18px;
+                padding: 30px 20px;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                
+
+            }
+        }
+    }
+}
